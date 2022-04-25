@@ -1,24 +1,53 @@
 const express = require('express')
 const router = express.Router()
+const db = require('../../models')
+const passport = require('passport')
+const User = db.User
+const Todo = db.ToDo 
 
 router.get('/login',(req,res) =>{
   res.render('login')
 })
 
-router.post('/login',(req,res) =>{
-  res.render('login')
-})
+router.post('/login',passport.authenticate(
+  'local',{
+    successRedirect:'/',
+    failureRedirect:'/users/login'
+  }
+))
 
 router.get('/register',(req,res) =>{
   res.render('register')
 })
 
 router.post('/register',(req,res) =>{
-  res.render('register')
+  const {name,email,password,confirmPassword} = req.body
+  User.findOne({ where: { email } }).then(user => {
+    if (user) {
+      console.log('User already exists')
+      return res.render('register', {
+        name,
+        email,
+        password,
+        confirmPassword
+      })
+    }
+    return bcrypt
+      .genSalt(10)
+      .then(salt => bcrypt.hash(password, salt))
+      .then(hash => User.create({
+        name,
+        email,
+        password: hash
+      }))
+      .then(() => res.redirect('/'))
+      .catch(err => console.log(err))
+  })
 })
 
 router.get('/logout',(req,res) =>{
-  res.render('logout')
+  req.logout()
+  res.render('login')
 })
 
 module.exports = router

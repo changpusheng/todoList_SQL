@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   ToDo.associate = function(models) {
     // associations can be defined here
+    ToDo.belongsTo(models.User)
   };
   return ToDo;
 };
