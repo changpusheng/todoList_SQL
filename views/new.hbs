@@ -1,0 +1,15 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mt-3">createToDo</h1>
+      {{> message}}
+      <form action="/todos/new" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter ToDo Name" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">送出</button>
+      </form>
+    </div>
+  </div>
+</div>
