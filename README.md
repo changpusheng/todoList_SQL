@@ -3,43 +3,24 @@
 環境建置與需求 (prerequisites)
 <ul>
 <li>
-    "express": "^4.17.2"
-    </li>
-    <li>
-    "express-handlebars": "^6.0.2"
-     </li>
-    <li>
-    "method-override": "^3.0.0"
-     </li>
-    <li>
-    "mongoose": "^6.1.5"
-     </li>
-    <li>
-    "nodemon": "^2.0.15"
-</li>
-   <li>
-    "bcryptjs": "^2.4.3"
-</li>
-  <li>
-    "connect-flash": "^0.1.1"
+   "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-facebook": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.21.13",
+    "sequelize-cli": "^5.5.1"
 </li>
  <li>
-   "dotenv": "^16.0.0"
-</li>
-<li>
-  "express-session": "^1.17.2"
-</li>
-<li>
-  "passport": "^0.4.1"
-</li>
-<li>
-   "passport-facebook": "^3.0.0"
-</li>
-<li>
-   "passport-local": "^1.0.0"
-</li>
- <li>
-資料庫使用:mongodb
+資料庫使用:SQL
     </li>
 </ul>
 
