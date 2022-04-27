@@ -30,7 +30,7 @@
 $git clone https://github.com/changpusheng/todoList_SQL.git
 </li>
 <li>
-$git cd  Restaurant/
+$git cd  todoList_SQL/
 </li>
 <li>
 $npm init -y
