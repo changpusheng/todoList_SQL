@@ -24,9 +24,18 @@
     </li>
    <li>
       建立MySQL Workbench
-      drop database if exists todo_sequelize;
-create database todo_sequelize;
+      "drop database if exists todo_sequelize;
+create database todo_sequelize;"
+      "use todo_sequelize;"
+"select * from todos;"
+"select * from users;"
       </li>
+       <li>
+       npx sequelize init
+    </li>
+   <li>
+   可以在config/config.json 看到資料庫連線的設定
+   </li>
 </ul>
 
 安裝與執行步驟 (installation and execution)
