@@ -24,10 +24,20 @@
     </li>
    <li>
       建立MySQL Workbench
+        </li>
+    <li>
       "drop database if exists todo_sequelize;
+       </li>
+   <li>
 create database todo_sequelize;"
+      </li>
+    <li>
       "use todo_sequelize;"
+         </li>
+    <li>
 "select * from todos;"
+        </li>
+   <li>
 "select * from users;"
       </li>
        <li>
