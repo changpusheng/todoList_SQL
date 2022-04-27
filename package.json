@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "allnpm": "npm install express express-handlebars nodemon mysql2@2.1.0 sequelize@5.21.13 sequelize-cli@5.5.1 bcryptjs connect-flash dotenv express-session passport passport-facebook passport-local",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
