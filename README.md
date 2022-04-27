@@ -22,6 +22,11 @@
  <li>
 資料庫使用:SQL
     </li>
+   <li>
+      建立MySQL Workbench
+      drop database if exists todo_sequelize;
+create database todo_sequelize;
+      </li>
 </ul>
 
 安裝與執行步驟 (installation and execution)
