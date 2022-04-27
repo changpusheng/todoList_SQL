@@ -27,7 +27,7 @@
 安裝與執行步驟 (installation and execution)
 <ul>
 <li>
-$git clone https://github.com/changpusheng/Restaurant.git
+$git clone https://github.com/changpusheng/todoList_SQL.git
 </li>
 <li>
 $git cd  Restaurant/
