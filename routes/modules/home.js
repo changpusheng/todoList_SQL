@@ -19,7 +19,7 @@ router.get('/todos/new', (req, res) => {
 router.post('/todos/new', (req, res) => {
   const { name } = req.body
   if (name.trim() == '') {
-    return res.render('new', { error: '不能空白' })
+    return res.render('new', { warning_msg: '不能空白' })
   }
   return Todo.create({
     name,

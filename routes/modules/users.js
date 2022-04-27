@@ -3,7 +3,6 @@ const router = express.Router()
 const db = require('../../models')
 const passport = require('passport')
 const User = db.User
-const Todo = db.ToDo
 const bcrypt = require('bcryptjs')
 
 router.get('/login', (req, res) => {
@@ -66,7 +65,8 @@ router.post('/register', (req, res) => {
 
 router.get('/logout', (req, res) => {
   req.logout()
-  res.render('login')
+  req.flash('success_msg', '登出成功!')
+  res.redirect('/users/login')
 })
 
 module.exports = router
